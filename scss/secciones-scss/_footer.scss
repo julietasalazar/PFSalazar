@@ -1,0 +1,16 @@
+.footer{
+    div{
+        @include estilo($principal, $segundo, 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+    p{
+        padding: 30px;
+        font-weight: 500;
+        color: $sexto;
+    }
+    }
+}

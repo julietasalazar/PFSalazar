@@ -1,0 +1,17 @@
+//utilidades
+@import './secciones-scss/colors';
+@import './secciones-scss/typo';
+
+//reseteo
+@import './secciones-scss/reset';
+@import './secciones-scss/extend-y-mixin';
+
+//secciones
+@import './secciones-scss/header';
+@import './secciones-scss/contenido';
+@import './secciones-scss/footer';
+@import './secciones-scss/index';
+@import './secciones-scss/sobre-nosotros';
+@import './secciones-scss/servicios';
+@import './secciones-scss/planes';
+@import './secciones-scss/contacto';
