@@ -1,0 +1,27 @@
+.contenido{
+    &__imagen-index {
+        width:80%;
+    }
+}
+
+.secciones-index{
+ display: flex;
+ flex-direction: row;
+ img{
+    width: 50%;
+ }
+}
+
+.grid-index {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: 
+      "imagen-index titulo-index"
+      "imagen-index texto-index"
+      "imagen-index texto-index"
+      "imagen-index texto-index"; 
+  }
+  .imagen-index { grid-area: imagen-index; }
+  .titulo-index { grid-area: titulo-index; }
+  .texto-index { grid-area: texto-index; }

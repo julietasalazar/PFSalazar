@@ -39,14 +39,11 @@
 }
 
 .contenido {
-  background-color: #f8e6f7;
+  background-color: #faf9f0;
   color: #823da1;
   width: 100%;
   text-align: center;
   font-family: "Quicksand", sans-serif;
-}
-.contenido img {
-  max-width: 40%;
 }
 
 .footer div {
@@ -64,4 +61,91 @@
   padding: 30px;
   font-weight: 500;
   color: #9F96B8;
+}
+
+.contenido__imagen-index {
+  width: 80%;
+}
+
+.secciones-index {
+  display: flex;
+  flex-direction: row;
+}
+.secciones-index img {
+  width: 50%;
+}
+
+.grid-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "imagen-index titulo-index" "imagen-index texto-index" "imagen-index texto-index" "imagen-index texto-index";
+}
+
+.imagen-index {
+  grid-area: imagen-index;
+}
+
+.titulo-index {
+  grid-area: titulo-index;
+}
+
+.texto-index {
+  grid-area: texto-index;
+}
+
+.contenido__mapa {
+  display: flex;
+  align-items: center;
+}
+.contenido__imagen-nosotros {
+  width: 40%;
+}
+
+.contenido__imagen-servicios {
+  width: 70%;
+}
+.contenido__servicios img {
+  width: 15%;
+}
+
+.grid-servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "servicios imagen-servicios imagen-servicios" "servicios imagen-servicios imagen-servicios" "servicios imagen-servicios imagen-servicios";
+}
+
+.servicios {
+  grid-area: servicios;
+}
+
+.imagen-servicios {
+  grid-area: imagen-servicios;
+}
+
+.contenido__imagen-planes {
+  width: 30%;
+}
+.contenido__planes img {
+  width: 10%;
+}
+
+.contenido__div--flex {
+  display: flex;
+}
+
+.formulario-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "texto formulario";
+}
+
+.texto {
+  grid-area: texto;
+}
+
+.formulario {
+  grid-area: formulario;
 }/*# sourceMappingURL=main.css.map */

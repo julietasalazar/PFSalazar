@@ -1,0 +1,25 @@
+.contenido {
+    &__imagen-servicios{
+        width: 70%;
+    }
+
+    &__servicios {
+        img {
+            width: 15%;
+        }
+    }
+}
+
+
+
+.grid-servicios {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;  
+    grid-template-areas: 
+      "servicios imagen-servicios imagen-servicios"
+      "servicios imagen-servicios imagen-servicios"
+      "servicios imagen-servicios imagen-servicios"; 
+  }
+  .servicios { grid-area: servicios; }
+  .imagen-servicios { grid-area: imagen-servicios; }

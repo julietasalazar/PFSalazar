@@ -1,0 +1,19 @@
+.contenido{
+   
+    &__div{
+        &--flex {
+            display: flex;
+        }
+    }
+
+}
+
+.formulario-grid{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    grid-template-areas: "texto formulario"; 
+  }
+  
+  .texto { grid-area: texto; }
+  .formulario { grid-area: formulario; }
