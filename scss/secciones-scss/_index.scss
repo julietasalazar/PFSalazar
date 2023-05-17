@@ -1,27 +1,91 @@
-.contenido{
+.contenido {
     &__imagen-index {
-        width:80%;
+        width: 85%;
+        padding-left: 4%;
+    }
+
+    &__opiniones {
+        background-color: $sexto;
+        width: 100%;
+
+        h2 {
+            padding: 9%;
+            font-family: $titulos;
+            color: $quinto;
+        }
+
+        .secciones-index {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 9%;
+
+            article{
+                padding: 0% 3% 0% 3%;
+            }
+
+            h3{
+                background-color: $principal;
+                border-radius: 10px;
+                font-family: $titulos;
+                color: $segundo;
+                font-weight: 400;
+                width: 60%;
+                padding: 1%;
+                margin: auto;
+            }
+
+            img {
+                width: 60%;
+                padding-bottom: 7%;
+            }
+
+            p {
+                color: $quinto;
+                padding-top: 7%;
+            }
+        }
+
+    }
+
+    a {
+        background-color: $sexto;
+        width: 100%;
+        padding-bottom: 8%;
     }
 }
 
-.secciones-index{
- display: flex;
- flex-direction: row;
- img{
-    width: 50%;
- }
-}
+
 
 .grid-index {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    grid-template-areas: 
-      "imagen-index titulo-index"
-      "imagen-index texto-index"
-      "imagen-index texto-index"
-      "imagen-index texto-index"; 
-  }
-  .imagen-index { grid-area: imagen-index; }
-  .titulo-index { grid-area: titulo-index; }
-  .texto-index { grid-area: texto-index; }
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "imagen-index titulo-index"
+        "imagen-index texto-index"
+        "imagen-index texto-index"
+        "imagen-index texto-index";
+}
+
+.imagen-index {
+    grid-area: imagen-index;
+}
+
+.titulo-index {
+    font-family: $titulos;
+    font-weight: 400;
+    padding: 5% 7% 5% 3%;
+    grid-area: titulo-index;
+}
+
+.texto-index {
+    background-color: $tercero;
+    color: $quinto;
+    padding: 5%;
+    margin: 2% 4% 2% 0%;
+    height: fit-content;
+    border-radius: 25px;
+    grid-area: texto-index;
+}

@@ -1,25 +1,49 @@
 .contenido {
-    &__imagen-servicios{
-        width: 70%;
+
+    &__beneficios {
+        h1 {
+            padding-top: 7%;
+        }
+    }
+
+    &__imagen-servicios {
+        width: 80%;
+        padding: 5%;
     }
 
     &__servicios {
+        padding-left: 20%;
+        margin: auto;
+
+        article{
+padding: 10%;
+       
         img {
-            width: 15%;
+            width: 30%;
         }
+
+        h3{
+            font-family: $titulos;
+        }
+    }
     }
 }
 
 
 
 .grid-servicios {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr;  
-    grid-template-areas: 
-      "servicios imagen-servicios imagen-servicios"
-      "servicios imagen-servicios imagen-servicios"
-      "servicios imagen-servicios imagen-servicios"; 
-  }
-  .servicios { grid-area: servicios; }
-  .imagen-servicios { grid-area: imagen-servicios; }
+    padding: 5% 0% 5% 3%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "servicios imagen-servicios imagen-servicios";
+}
+
+.servicios {
+    grid-area: servicios;
+}
+
+.imagen-servicios {
+    grid-area: imagen-servicios;
+}

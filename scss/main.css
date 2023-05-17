@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto+Condensed:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -24,16 +24,21 @@
   text-align: center;
   height: 10vh;
 }
+.header h1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
 .header a {
   text-decoration: none;
   color: #9F96B8;
+  font-family: "Roboto Condensed", sans-serif;
 }
 .header nav {
   width: 70%;
 }
 .header__ul-flex {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-evenly;
   list-style: none;
   font-weight: 500;
 }
@@ -44,6 +49,9 @@
   width: 100%;
   text-align: center;
   font-family: "Quicksand", sans-serif;
+}
+.contenido h1 {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .footer div {
@@ -57,25 +65,64 @@
   align-items: center;
   height: 10vh;
 }
+.footer div h1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
 .footer div p {
   padding: 30px;
   font-weight: 500;
   color: #9F96B8;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .contenido__imagen-index {
-  width: 80%;
+  width: 85%;
+  padding-left: 4%;
 }
-
-.secciones-index {
+.contenido__opiniones {
+  background-color: #9F96B8;
+  width: 100%;
+}
+.contenido__opiniones h2 {
+  padding: 9%;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #faf9f0;
+}
+.contenido__opiniones .secciones-index {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  padding-bottom: 9%;
 }
-.secciones-index img {
-  width: 50%;
+.contenido__opiniones .secciones-index article {
+  padding: 0% 3% 0% 3%;
+}
+.contenido__opiniones .secciones-index h3 {
+  background-color: #f5e945;
+  border-radius: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #823da1;
+  font-weight: 400;
+  width: 60%;
+  padding: 1%;
+  margin: auto;
+}
+.contenido__opiniones .secciones-index img {
+  width: 60%;
+  padding-bottom: 7%;
+}
+.contenido__opiniones .secciones-index p {
+  color: #faf9f0;
+  padding-top: 7%;
+}
+.contenido a {
+  background-color: #9F96B8;
+  width: 100%;
+  padding-bottom: 8%;
 }
 
 .grid-index {
+  padding: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -87,33 +134,78 @@
 }
 
 .titulo-index {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  padding: 5% 7% 5% 3%;
   grid-area: titulo-index;
 }
 
 .texto-index {
+  background-color: #77c28d;
+  color: #faf9f0;
+  padding: 5%;
+  margin: 2% 4% 2% 0%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 25px;
   grid-area: texto-index;
 }
 
+.contenido__nosotros h1 {
+  padding-top: 7%;
+  margin-bottom: 3%;
+}
+.contenido__nosotros p {
+  width: 60%;
+  padding-bottom: 4%;
+  margin: auto;
+  text-align: justify;
+}
 .contenido__mapa {
+  background-color: #9F96B8;
+  border-radius: 25px;
+  padding: 5%;
+  margin: 5%;
+  width: 80%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+.contenido__mapa h3 {
+  color: #faf9f0;
 }
 .contenido__imagen-nosotros {
-  width: 40%;
+  width: 45%;
 }
 
-.contenido__imagen-servicios {
-  width: 70%;
+.contenido__beneficios h1 {
+  padding-top: 7%;
 }
-.contenido__servicios img {
-  width: 15%;
+.contenido__imagen-servicios {
+  width: 80%;
+  padding: 5%;
+}
+.contenido__servicios {
+  padding-left: 20%;
+  margin: auto;
+}
+.contenido__servicios article {
+  padding: 10%;
+}
+.contenido__servicios article img {
+  width: 30%;
+}
+.contenido__servicios article h3 {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .grid-servicios {
+  padding: 5% 0% 5% 3%;
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "servicios imagen-servicios imagen-servicios" "servicios imagen-servicios imagen-servicios" "servicios imagen-servicios imagen-servicios";
+  grid-template-rows: 1fr;
+  grid-template-areas: "servicios imagen-servicios imagen-servicios";
 }
 
 .servicios {
@@ -131,11 +223,15 @@
   width: 10%;
 }
 
+.contenido__div {
+  width: 80%;
+}
 .contenido__div--flex {
   display: flex;
 }
 
 .formulario-grid {
+  padding: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -147,5 +243,10 @@
 }
 
 .formulario {
+  display: flex;
+  justify-items: left;
+  grid-area: formulario;
+  flex-direction: column;
+  align-items: flex-start;
   grid-area: formulario;
 }/*# sourceMappingURL=main.css.map */

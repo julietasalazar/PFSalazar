@@ -1,10 +1,36 @@
-.contenido{
-    &__mapa{
+.contenido {
+
+    &__nosotros {
+        h1 {
+            padding-top: 7%;
+            margin-bottom: 3%;
+        }
+
+        p {
+            width: 60%;
+            padding-bottom: 4%;
+            margin: auto;
+            text-align: justify;
+        }
+    }
+
+    &__mapa {
+        background-color: $sexto;
+        border-radius: 25px;
+        padding: 5%;
+        margin: 5%;
+        width: 80%;
         display: flex;
         align-items: center;
+        justify-content: space-around;
+
+        h3{
+            color: $quinto;
+        }
+
     }
 
     &__imagen-nosotros {
-        width: 40%;
+        width: 45%;
     }
 }
