@@ -1,11 +1,66 @@
 .contenido {
-    &__imagen-planes {
-        width: 30%;
-    }
 
     &__planes {
-        img {
-            width: 10%;
+        display: flex;
+        background-color: $principal;
+        padding-left: 9%;
+
+        article {
+            color: $quinto;
+            display: flex;
+            justify-content: right;
+            background-color: $tercero;
+            border-radius: 15px;
+            padding: 2%;
+            margin: 5%;
+
+            div {
+                background-color: $tercero;
+                border-radius: 15px;
+                padding: 2%;
+            }
+
+            img {
+                width: 100%;
+
+            }
         }
+
     }
+}
+
+
+.grid-planes {
+    width: 80%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "imagen-planes titulo-planes"
+        "imagen-planes texto-planes"
+        "imagen-planes texto-planes";
+}
+
+.imagen-planes {
+    width: 80%;
+    padding-left: 10%;
+    grid-area: imagen-planes;
+}
+
+.titulo-planes {
+    padding-right: 8%;
+    font-weight: 400;
+    margin-top: 20%;
+    grid-area: titulo-planes;
+}
+
+.texto-planes {
+    background-color: $sexto;
+    color: $quinto;
+    border-radius: 20px;
+    width: 80%;
+    padding: 5%;
+    height: fit-content;
+    grid-area: texto-planes;
 }

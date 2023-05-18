@@ -28,14 +28,16 @@
     </nav>
   </header>
   <!-- Contenido principal -->
-  <main class="contenido formulario-grid">
-    <div class="contenido__div texto">
-      <h1>Cuida a tu mascota como se merece!</h1>
-      <p>Dejanos tus datos para que nos comuniquemos con vos y te contemos más acerca de los beneficios que te
-        brindamos.</p>
-    </div>
-    <div class="contenido__div formulario">
-      <form action="#" method="get"></form>
+  <main class="contenido">
+    <section class="formulario-grid">
+      <div class="contenido__div texto">
+        <h1>Cuida a tu mascota como se merece!</h1>
+        <p>Dejanos tus datos para que nos comuniquemos con vos y te contemos más acerca de los beneficios que te
+          brindamos.</p>
+          <img src="../recursos/imagenes/perritomarron.png" alt="perrito-marron">
+      </div>
+      <div class="contenido__div formulario">
+        <form action="#" method="get"></form>
         <div>
           <input type="text" placeholder="Nombre" name="Nombre">
         </div>
@@ -46,28 +48,30 @@
           <input type="text" placeholder="Teléfono" name="Telefono">
         </div>
         <div class="contenido__div--flex">
-        <p>De que zona sos?</p>
-        <select name="zona">
-          <option value="CABA">CABA</option>
-          <option value="zona-norte">Zona Norte</option>
-          <option value="zona-sur">Zona Sur</option>
-          <option value="zona-oeste">Zona Oesta</option>
-        </select>
-      </div>
-            <div>
-        <p>Horario de contacto</p>
-        <div class="contenido__div--flex">
-          <input type="radio" name="horario" value="9:00 a 13:00">
-          <p>De 9:00 a 13:00</p>
-        </div>
-        <div class="contenido__div--flex">
-          <input type="radio" name="horario" value="13:00 a 17:00">
-          <p>De 13:00 a 17:00</p>
+          <p>De que zona sos?</p>
+          <select name="zona">
+            <option value="CABA">CABA</option>
+            <option value="zona-norte">Zona Norte</option>
+            <option value="zona-sur">Zona Sur</option>
+            <option value="zona-oeste">Zona Oesta</option>
+          </select>
         </div>
         <div>
-          <input type="submit" value="Contactenme!">
+          <p>Horario de contacto</p>
+          <div class="contenido__div--flex">
+            <input type="radio" name="horario" value="9:00 a 13:00" class="radius">
+            <p>De 9:00 a 13:00</p>
+          </div>
+          <div class="contenido__div--flex">
+            <input type="radio" name="horario" value="13:00 a 17:00" class="radius">
+            <p>De 13:00 a 17:00</p>
+          </div>
+          <div class="boton">
+            <input type="submit" value="Contactenme!">
+          </div>
         </div>
       </div>
+    </section>
   </main>
   <!-- Footer -->
   <footer class="footer">

@@ -1,28 +1,71 @@
-.contenido{
-   
-    &__div{
-width: 80%;
+.contenido {
+
+    &__div {
+        padding: 5%;
+        width: 80%;
+
+            h1 {
+                padding-bottom: 4%;
+            }
+
+            p {
+                padding-top: 4%;
+            }
+
+            img {
+                width: 50%;
+                padding: 10%;
+            }
+        
+
+        div {
+            margin: 3%;
+        }
+
+        input {
+            padding: 6%;
+            border-radius: 10px;
+        }
+
+        select {
+            padding: 5%;
+            border-radius: 10px;
+        }
 
         &--flex {
             display: flex;
-        }
-    }
+            flex-wrap: wrap;
 
+            .radius {
+                padding: 10%;
+            }
+        }
+
+    }
 }
 
-.formulario-grid{
+.formulario-grid {
     padding: 5%;
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    grid-template-areas: "texto formulario"; 
-  }
-  
-  .texto { grid-area: texto; }
-  .formulario { 
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "texto formulario";
+}
+
+.texto {
+    width: 70%;
+    grid-area: texto;
+}
+
+.formulario {
     display: flex;
-    justify-items: left;
     grid-area: formulario;
     flex-direction: column;
     align-items: flex-start;
-    grid-area: formulario; }
+    grid-area: formulario;
+    background-color: $sexto;
+    border-radius: 20px;
+    width: 50%;
+    color: $quinto;
+}
