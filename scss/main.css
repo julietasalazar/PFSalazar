@@ -183,36 +183,35 @@
   grid-area: texto-index;
 }
 
-.contenido__opiniones .secciones-index {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 375px) {
+  .contenido__opiniones .secciones-index {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenido__opiniones .secciones-index article {
+    padding: 5%;
+  }
+  .contenido__opiniones .secciones-index h3 {
+    width: 35%;
+  }
+  .contenido__opiniones .secciones-index img {
+    width: 40%;
+  }
+  .contenido a {
+    background-color: #9F96B8;
+    width: 100%;
+    padding-bottom: 8%;
+  }
+  .grid-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .texto-index {
+    margin: auto;
+    width: 70%;
+  }
 }
-.contenido__opiniones .secciones-index article {
-  padding: 5%;
-}
-.contenido__opiniones .secciones-index h3 {
-  width: 35%;
-}
-.contenido__opiniones .secciones-index img {
-  width: 40%;
-}
-.contenido a {
-  background-color: #9F96B8;
-  width: 100%;
-  padding-bottom: 8%;
-}
-
-.grid-index {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.texto-index {
-  margin: auto;
-  width: 70%;
-}
-
 .contenido__nosotros h1 {
   padding-top: 7%;
   margin-bottom: 3%;
