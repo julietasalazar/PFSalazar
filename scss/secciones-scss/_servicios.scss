@@ -58,3 +58,25 @@
 }
 
 //Media Querys
+
+@media (max-width: 375px) {
+    .contenido {
+        &__servicios {
+            padding-left: 0%;
+            margin: auto;
+        }
+    }
+
+    .grid-servicios {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .imagen-servicios {
+        margin: auto;
+    }
+
+}

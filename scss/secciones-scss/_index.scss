@@ -20,11 +20,11 @@
             justify-content: center;
             padding-bottom: 9%;
 
-            article{
+            article {
                 padding: 0% 3% 0% 3%;
             }
 
-            h3{
+            h3 {
                 background-color: $principal;
                 border-radius: 10px;
                 font-family: $titulos;
@@ -38,6 +38,7 @@
             img {
                 width: 60%;
                 padding-bottom: 7%;
+                border-radius: 15px;
             }
 
             p {
@@ -93,3 +94,47 @@
 
 //Mobile last
 
+.contenido {
+
+
+    &__opiniones {
+
+        .secciones-index {
+            display: flex;
+            flex-direction: column;
+
+            article {
+                padding: 5%;
+            }
+
+            h3 {
+                width: 35%;
+
+            }
+
+            img {
+                width: 40%;
+            }
+
+
+        }
+
+    }
+
+    a {
+        background-color: $sexto;
+        width: 100%;
+        padding-bottom: 8%;
+    }
+}
+
+.grid-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-index {
+    margin: auto;
+    width: 70%;
+}

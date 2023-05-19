@@ -24,13 +24,68 @@
         align-items: center;
         justify-content: space-around;
 
-        h3{
+        h3 {
             color: $quinto;
+            padding-bottom: 7%;
         }
 
     }
 
     &__imagen-nosotros {
         width: 45%;
+    }
+}
+
+
+//Media querys
+
+@media (max-width: 375px) {
+
+    .contenido {
+
+        &__nosotros {
+            h1 {
+                padding-top: 7%;
+                margin-bottom: 3%;
+            }
+
+            p {
+                width: 60%;
+                padding-bottom: 4%;
+                margin: auto;
+                text-align: left;
+            }
+        }
+
+        &__imagen-nosotros {
+            padding: 7%;
+            width: 80%;
+        }
+
+        &__mapa {
+            background-color: $sexto;
+            border-radius: 25px;
+            padding: 5%;
+            margin: 5%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            
+
+            div {
+                iframe {
+                    width: 80%;
+
+                    h3 {
+                        color: $quinto;
+                    }
+                }
+
+            }
+
+           
+        }
     }
 }

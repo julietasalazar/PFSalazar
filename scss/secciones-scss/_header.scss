@@ -31,14 +31,25 @@
 //Media Querys
 
 @media (max-width: 375px) {
-   .header {
-    @include estilo($principal, $segundo, 100%);
+    .header {
+        @include estilo($principal, $segundo, 100%);
+        flex-direction: column;
+        height: 15vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    height: 10vh;
-   }
+        p a {
+            font-size: xx-large;
+        }
+    
+        &__ul-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+       nav {
+        width: 85%;
+        font-size: x-small;
+    }
+
 }

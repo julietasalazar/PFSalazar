@@ -1,17 +1,29 @@
-.footer{
-    div{
+.footer {
+    div {
         @include estilo($principal, $segundo, 100%);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
 
-    p{
-        padding: 30px;
-        font-weight: 500;
-        color: $sexto;
-        font-family: $titulos;
+        p {
+            padding: 30px;
+            font-weight: 500;
+            color: $sexto;
+            font-family: $titulos;
+        }
     }
+}
+
+//Media Querys
+
+@media (max-width: 375px) {
+    .footer {
+        div {
+            p {
+                padding: 10px;
+            }
+        }
     }
 }
