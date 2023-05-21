@@ -35,11 +35,13 @@
         @include estilo($principal, $segundo, 100%);
         flex-direction: column;
         height: 15vh;
+        display: flex;
+        justify-content: space-evenly;
 
         p a {
             font-size: xx-large;
         }
-    
+
         &__ul-flex {
             display: flex;
             flex-direction: row;
@@ -47,7 +49,7 @@
         }
     }
 
-       nav {
+    nav {
         width: 85%;
         font-size: x-small;
     }

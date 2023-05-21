@@ -25,6 +25,8 @@
         justify-content: space-around;
 
         h3 {
+            font-family: $titulos;
+            font-size: x-large;
             color: $quinto;
             padding-bottom: 7%;
         }
@@ -50,7 +52,7 @@
             }
 
             p {
-                width: 60%;
+                width: 80%;
                 padding-bottom: 4%;
                 margin: auto;
                 text-align: left;

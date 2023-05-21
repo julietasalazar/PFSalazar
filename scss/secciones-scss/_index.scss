@@ -1,4 +1,9 @@
 .contenido {
+
+    h1{
+        font-weight: bold;
+    }
+
     &__imagen-index {
         width: 85%;
         padding-left: 4%;
@@ -71,6 +76,7 @@
 }
 
 .imagen-index {
+    width: 90%;
     grid-area: imagen-index;
 }
 
@@ -94,7 +100,7 @@
 
 //Mobile last
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
 .contenido {
 
 

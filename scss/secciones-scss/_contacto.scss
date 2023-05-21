@@ -4,32 +4,55 @@
         padding: 5%;
         width: 80%;
 
-            h1 {
-                padding-bottom: 4%;
-            }
+        h1 {
+            padding-bottom: 4%;
+        }
 
-            p {
-                padding-top: 4%;
-            }
+        p {
+            padding-top: 4%;
+        }
 
-            img {
-                width: 50%;
-                padding: 10%;
-            }
-        
+        img {
+            width: 50%;
+            padding: 10%;
+        }
+
 
         div {
             margin: 3%;
+
+            .boton {
+                margin: 20%;
+
+                input {
+                    font-weight: bold;
+                    padding: 10%;
+                    background-color: $principal;
+                    color: $sexto;
+                    font-size: large;
+                    border-style: none;
+                }
+            }
         }
 
         input {
             padding: 6%;
             border-radius: 10px;
+            font-family: $general;
+            background-color: $quinto;
+            border-style: none;
+            font-weight: bold;
         }
 
         select {
+            margin-top: 5%;
             padding: 5%;
             border-radius: 10px;
+            font-family: $general;
+            background-color: $quinto;
+            border-style: none;
+            color: black;
+            font-weight: bold;
         }
 
         &--flex {
@@ -54,18 +77,53 @@
 }
 
 .texto {
-    width: 70%;
+    width: 100%;
+    padding-left: 25%;
     grid-area: texto;
+
+    p {
+        background-color: $tercero;
+        padding: 5%;
+        border-radius: 15px;
+        color: $quinto;
+    }
 }
 
 .formulario {
     display: flex;
-    grid-area: formulario;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 5%;
     grid-area: formulario;
     background-color: $sexto;
     border-radius: 20px;
     width: 50%;
     color: $quinto;
+}
+
+//Media querys
+
+@media (max-width: 375px) {
+    .formulario-grid {
+        display: contents;
+    }
+
+    .formulario {
+        width: 60%;
+        margin-bottom: 10%;
+    }
+
+    .texto {
+
+        width: 90%;
+        padding-left: 8%;
+
+        div {
+            display: flex;
+            flex-direction: row-reverse;
+            padding-left: 5%;
+        }
+    }
+
 }
