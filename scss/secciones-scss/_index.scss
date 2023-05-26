@@ -27,6 +27,7 @@
 
             article {
                 padding: 0% 3% 0% 3%;
+                width: 25%;
             }
 
             h3 {
@@ -41,7 +42,7 @@
             }
 
             img {
-                width: 60%;
+                width: 150px;
                 padding-bottom: 7%;
                 border-radius: 15px;
             }
@@ -49,6 +50,8 @@
             p {
                 color: $quinto;
                 padding-top: 7%;
+                width: 60%;
+                margin: auto;
             }
         }
 
@@ -100,7 +103,7 @@
 
 //Mobile last
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
 .contenido {
 
 
@@ -112,6 +115,7 @@
 
             article {
                 padding: 5%;
+                width: auto;
             }
 
             h3 {
@@ -119,8 +123,14 @@
 
             }
 
+            p{
+                width: 60%;
+                margin: auto;
+                padding-bottom: 15%;
+            }
+
             img {
-                width: 40%;
+                width: 150px;
             }
 
 

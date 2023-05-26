@@ -132,6 +132,7 @@
 }
 .contenido__opiniones .secciones-index article {
   padding: 0% 3% 0% 3%;
+  width: 25%;
 }
 .contenido__opiniones .secciones-index h3 {
   background-color: #f5e945;
@@ -144,13 +145,15 @@
   margin: auto;
 }
 .contenido__opiniones .secciones-index img {
-  width: 60%;
+  width: 150px;
   padding-bottom: 7%;
   border-radius: 15px;
 }
 .contenido__opiniones .secciones-index p {
   color: #faf9f0;
   padding-top: 7%;
+  width: 60%;
+  margin: auto;
 }
 .contenido a {
   background-color: #9F96B8;
@@ -189,19 +192,25 @@
   grid-area: texto-index;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .contenido__opiniones .secciones-index {
     display: flex;
     flex-direction: column;
   }
   .contenido__opiniones .secciones-index article {
     padding: 5%;
+    width: auto;
   }
   .contenido__opiniones .secciones-index h3 {
     width: 35%;
   }
+  .contenido__opiniones .secciones-index p {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 15%;
+  }
   .contenido__opiniones .secciones-index img {
-    width: 40%;
+    width: 150px;
   }
   .contenido a {
     background-color: #9F96B8;
